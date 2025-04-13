@@ -1,3 +1,7 @@
+@import "tailwindcss";
+
+/* Css Reset */
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -15,6 +19,7 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+	font-family: var(--font-body);
 }
 
 img, picture, video, canvas, svg {
@@ -34,9 +39,31 @@ p {
   text-wrap: pretty;
 }
 h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
   text-wrap: balance;
 }
 
 #root, #__next {
   isolation: isolate;
 }
+
+/* Design tokens */
+@theme {
+  --color-black: hsl(247, 75%, 5%);
+  --color-white: hsl(240, 60%, 99%);
+  --color-primary: hsl(26, 91%, 58%);
+  --color-secondary: hsl(210, 18%, 20%);
+  --color-accent: hsl(37, 97%, 62%);
+
+	--font-heading: Sora, serif;
+	--font-body: Heebo, serif;
+
+	--text-sz-sm: 0.750rem;
+	--text-sz-base: 1rem;
+	--text-sz-xl: 1.333rem;
+	--text-sz-2xl: 1.777rem;
+	--text-sz-3xl: 2.369rem;
+	--text-sz-4xl: 3.158rem;
+	--text-sz-5xl: 4.210rem;
+}
+
