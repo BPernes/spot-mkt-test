@@ -1,0 +1,3 @@
+input:focus {
+  outline: solid var(--color-primary);
+}
