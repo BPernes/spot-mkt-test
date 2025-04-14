@@ -2,10 +2,26 @@ import * as React from 'react';
 import './LoginForm.css';
 import Button from '@/components/Button';
 import Typography from '@/components/Typography';
+import { UserContext } from '../../providers/UserProvider';
+
 
 function LoginForm() {
+	const [username, setUsername] = React.useState('');
+	const [password, setPassword] = React.useState('');
+	const { setIsLogged } = React.useContext(UserContext)
+
+	function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+		e.preventDefault();
+		if (username === 'spotmkt' && password === '123') {
+			setIsLogged(true)
+		}
+	}
+
 	return (
-		<form className="flex flex-col gap-3 min-w-14">
+		<form
+			className="flex flex-col gap-3 min-w-14"
+			onSubmit={handleSubmit}
+		>
 			<div className="flex flex-col gap-1">
 				<label htmlFor="user">Usuário</label>
 				<input
@@ -15,6 +31,8 @@ function LoginForm() {
 					name="user"
 					id="user"
 					required
+					value={username}
+					onChange={e => setUsername(e.target.value)}
 				/>
 			</div>
 
@@ -27,6 +45,8 @@ function LoginForm() {
 					name="password"
 					id="pwd"
 					required
+					value={password}
+					onChange={e => setPassword(e.target.value)}
 				/>
 			</div>
 			<div className="flex justify-end">
