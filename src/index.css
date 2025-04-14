@@ -68,12 +68,6 @@ h6 {
   isolation: isolate;
 }
 
-#root {
-  display: grid;
-  place-items: center;
-  height: 100vh;
-}
-
 /* Design tokens */
 @theme {
   --color-black: hsl(247, 75%, 5%);
