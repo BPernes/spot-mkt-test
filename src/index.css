@@ -1,8 +1,10 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 /* Css Reset */
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -19,32 +21,57 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-	font-family: var(--font-body);
+  font-family: var(--font-body);
+  background-image: url('/login-bg.png');
 }
 
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
-input, button, textarea, select {
+input,
+textarea,
+select {
   font: inherit;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
 p {
   text-wrap: pretty;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
   text-wrap: balance;
 }
 
-#root, #__next {
+#root,
+#__next {
   isolation: isolate;
+}
+
+#root {
+  display: grid;
+  place-items: center;
+  height: 100vh;
 }
 
 /* Design tokens */
@@ -54,16 +81,17 @@ h1, h2, h3, h4, h5, h6 {
   --color-primary: hsl(26, 91%, 58%);
   --color-secondary: hsl(210, 18%, 20%);
   --color-accent: hsl(37, 97%, 62%);
+  --color-grey-disabled: hsl(0, 0%, 79%);
+  --color-grey-title: hsl(0, 0%, 34%);
 
-	--font-heading: Sora, serif;
-	--font-body: Heebo, serif;
+  --font-heading: Sora, serif;
+  --font-body: Heebo, serif;
 
-	--text-sz-sm: 0.750rem;
-	--text-sz-base: 1rem;
-	--text-sz-xl: 1.333rem;
-	--text-sz-2xl: 1.777rem;
-	--text-sz-3xl: 2.369rem;
-	--text-sz-4xl: 3.158rem;
-	--text-sz-5xl: 4.210rem;
+  --text-sz-sm: 0.75rem;
+  --text-sz-base: 1rem;
+  --text-sz-xl: 1.333rem;
+  --text-sz-2xl: 1.777rem;
+  --text-sz-3xl: 2.369rem;
+  --text-sz-4xl: 3.158rem;
+  --text-sz-5xl: 4.21rem;
 }
-
