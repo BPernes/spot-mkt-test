@@ -8,8 +8,6 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 function Button({ children, className, iconName }: ButtonProps) {
-  console.log(children, className, iconName);
-
   const baseClasses = `
 				flex
 				text-white

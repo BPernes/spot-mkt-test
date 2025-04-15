@@ -47,7 +47,6 @@ function Sidebar() {
   }, [isOpen]);
 
   function handleOpenClose() {
-    console.log('me chamara');
     setIsOpen(!isOpen);
   }
 
