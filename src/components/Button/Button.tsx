@@ -1,12 +1,17 @@
 import * as React from 'react';
 import clsx from 'clsx';
+import Icon from '@/components/Icon';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
+  iconName?: string;
 }
 
-function Button({ children, className }: ButtonProps) {
+function Button({ children, className, iconName }: ButtonProps) {
+  console.log(children, className, iconName);
+
   const baseClasses = `
+				flex
 				text-white
 				text-sz-base
 				bg-primary
@@ -20,6 +25,7 @@ function Button({ children, className }: ButtonProps) {
 
   return (
     <button className={clsx(className, baseClasses)} type="submit">
+      {iconName && <Icon name={iconName} />}
       {children}
     </button>
   );
