@@ -1,7 +1,16 @@
-import * as React from 'react';
+import './HomeScreen.css';
+import Sidebar from '@/components/Sidebar';
+import Dashboard from '@/components/Dashboard';
 
 function HomeScreen() {
-  return <div></div>;
+  return (
+    <>
+      <main className="w-full h-screen flex flex-row relative">
+        <Sidebar />
+        <Dashboard />
+      </main>
+    </>
+  );
 }
 
 export default HomeScreen;

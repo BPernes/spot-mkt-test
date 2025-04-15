@@ -1,7 +1,7 @@
 import * as React from 'react';
 import './LoginForm.css';
-import Button from '@/components/Button';
-import Typography from '@/components/Typography';
+import Button from '../Button';
+import Typography from '../Typography';
 import { UserContext } from '../../providers/UserProvider';
 
 function LoginForm() {
@@ -51,7 +51,7 @@ function LoginForm() {
         </Typography>
       </div>
 
-      <Button className="!mt-3" type="submit">
+      <Button className="!mt-3 items-center justify-center" type="submit">
         Entrar
       </Button>
     </form>
