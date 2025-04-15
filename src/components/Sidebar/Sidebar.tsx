@@ -1,4 +1,3 @@
-import './Sidebar.css';
 import * as React from 'react';
 import { motion, useAnimationControls } from 'motion/react';
 import Menu from '@/components/Menu';
