@@ -7,17 +7,22 @@ Aplicativo de demonstração para uma plataforma de gestão de marketing, desenv
 - **Tela de Login**: Autenticação simulada (sem backend real).  
 - **Dashboard**: Página inicial com cards de métricas (leads, conversão, campanhas) e gráficos ilustrativos.  
 
----
+**Telas de referência criadas no figma**:
+- Login:
+![Protótipo de login](.github/login-screen.png)
+- Dasboard:
+![Protótipo de tela de dashboard](.github/dashboard-screen.png)
 
 ## **🛠 Tecnologias Utilizadas**  
 - **Frontend**:  
   - React.js (TypeScript)  
   - TailwindCSS (para estilização)  
+  - Motion (para animações)
+
 - **Ferramentas**:  
   - Vite (para build)  
   - ESLint + Prettier (padronização de código)  
-
----
+  - Husky (linting dos commits)
 
 ## **🚀 Como Rodar o Projeto**  
 
@@ -51,11 +56,13 @@ Aplicativo de demonstração para uma plataforma de gestão de marketing, desenv
    http://localhost:3000
    ```  
 
----
-
 ## **📌 Notas Adicionais**  
 - **Dados fictícios**: As métricas e gráficos usam dados mockados(sem integração com APIs reais).  
 - **Gráficos não interativos**: Os Gráficos são apenas demonstrativos e responsivos.
 - **Objetivo do teste**: Demonstrar habilidades em UI, componentização e organização de código.  
+
+## **😰Dificuldades**
+- Layout do dashboard não ficou completamente responsivo em mobile
+- Gastei mais tempo que o esperado montando o protótipo no figma o que resultou em um atraso no desenvolvimento
 
 *Desenvolvido por Bernardo Pernes* 😊  
