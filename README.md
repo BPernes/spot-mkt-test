@@ -1,5 +1,8 @@
 # 📊 Spot MKT - Frontend Test
 
+## **Link para visualização do site**  
+[spot-mkt-test](https://spot-mkt-test.netlify.app/)
+
 ## **Descrição do Projeto**  
 Aplicativo de demonstração para uma plataforma de gestão de marketing, desenvolvido como parte de um teste técnico.
 
