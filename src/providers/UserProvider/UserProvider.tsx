@@ -2,7 +2,9 @@ import * as React from 'react';
 
 export const UserContext = React.createContext({
   isLogged: false,
-  setIsLogged: (isLogged: boolean) => {},
+  setIsLogged: (isLogged: boolean) => {
+    console.warn('No UserProvider found. setIsLogged called with:', isLogged);
+  },
 });
 
 function UserProvider({ children }: React.PropsWithChildren<{}>) {
