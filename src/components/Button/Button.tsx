@@ -1,10 +1,11 @@
 import * as React from 'react';
+import { IconName } from '@/components/Icon';
 import clsx from 'clsx';
 import Icon from '@/components/Icon';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
-  iconName?: string;
+  iconName?: IconName;
 }
 
 function Button({ children, className, iconName }: ButtonProps) {
